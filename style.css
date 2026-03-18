@@ -209,3 +209,27 @@ footer {
     }
     
  }
+
+ /* validacion formulario*/
+
+ input:required:valid{
+    background: rgb(184, 214, 184);
+    border: 2px solid rgb(137, 243, 137);
+
+ }
+
+ input:required:invalid{
+    background: rgb(233, 191, 191);
+    border: 2px solid red;
+ }
+
+ textarea:required:valid{
+    background: rgb(184, 214, 184);
+    border: 2px solid rgb(137, 243, 137);
+
+ }
+
+ textarea:required:invalid{
+    background: rgb(233, 191, 191);
+    border: 2px solid red;
+ }
