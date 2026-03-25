@@ -94,18 +94,22 @@ footer {
 
 
 .section-container div {
-    width: 50%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
     padding: 20px;
+    text-align: center;
 }
 
 /* SECTION SOBRE MÍ */
 .picture-profile-container {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
   width: 100%;
   height: 100%;
-  overflow: hidden;
+  /* background-color: #05163d; */
+  /* overflow: hidden; */
 }
 
 .picture-profile-container img {
@@ -198,17 +202,7 @@ footer {
     margin-bottom: 10px;
 }
 
-/* PANTALLA MAS CHICAS */
- @media screen and (max-width: 768px) {
-    .section-container {
-        flex-direction: column;
-        width: 90%;
-    }
-    .section-container div {
-        width: 100%;
-    }
-    
- }
+
 
  /* validacion formulario*/
 
@@ -249,3 +243,48 @@ footer {
     padding: 20px; */
     gap: 20px;
 }
+
+.carrera-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.carrera-container table{
+    border-collapse: collapse;
+    border: 1px solid #113155;
+    border-radius: 20px;
+}
+
+th{
+    background-color: #475c7c;
+    color: #f4f4f4;
+    font-weight: bold;
+}
+
+th,td{
+    border: 1px solid #05163d;
+    padding: 0 20px;
+}
+
+tr:nth-child(even){
+    background-color: #c1d1e7;
+}
+
+
+/* PANTALLA MAS CHICAS */
+ @media screen and (max-width: 768px) {
+    .section-container {
+        flex-direction: column;
+        width: 90%;
+    }
+    .section-container div {
+        width: 100%;
+    }
+
+    /* .carrera-container{
+        flex-direction: column;
+        justify-content: space-between;
+    } */
+    
+ }
