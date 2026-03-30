@@ -11,6 +11,13 @@ body {
     color: #333;
 }
 
+/* CLASES GENERALES TITULOS SUBTITULOS LAYOUT */
+.title{
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #333;
+}
+
 header {
     background-color: #113155;
     background-image: url(./img/pexels-coding-1841550_1920.jpg);
@@ -223,12 +230,6 @@ textarea:required:invalid:not(:placeholder-shown){
     box-shadow: 0 0 5px rgba(17, 49, 85, 0.5);
  }
 
-
-.title{
-    text-align: center;
-    margin-bottom: 20px;
-    border-bottom: 2px solid #333;
-}
 
 /* para las redes sociales */
 .social-links {
