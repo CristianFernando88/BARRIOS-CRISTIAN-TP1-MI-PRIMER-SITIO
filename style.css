@@ -128,7 +128,7 @@ footer {
 
 
 /* SECTION CONTACTO */
-/* estilos formulario */
+/* estilos para formulario */
 .form-container {
     display: flex;
     flex-direction: column;
@@ -180,6 +180,45 @@ footer {
 }
 
 
+ /* validacion formulario*/
+
+ input:required:valid{
+    background: rgb(224, 241, 224);
+    border: 2px solid rgb(144, 223, 144);
+
+ }
+
+ input:required:invalid:not(:placeholder-shown){
+    background: rgb(233, 191, 191);
+    border: 2px solid red;
+ }
+
+ textarea:required:valid{
+    background: rgb(224, 241, 224);
+    border: 2px solid rgb(144, 223, 144);
+ }
+
+textarea:required:invalid:not(:placeholder-shown){
+    background: rgb(233, 191, 191);
+    border: 2px solid red;
+ }
+
+.input-checkbox:required:valid{
+    background: rgb(224, 241, 224);
+    border: 2px solid rgb(144, 223, 144);
+ }
+ .input-checkbox:required:invalid:not(:placeholder-shown){
+    background: rgb(233, 191, 191);
+    border: 2px solid red;
+ }
+
+ input:focus{
+    outline: none;
+    border: 2px solid #113155;
+    box-shadow: 0 0 5px rgba(17, 49, 85, 0.5);
+ }
+
+
 .title{
     text-align: center;
     margin-bottom: 20px;
@@ -210,67 +249,7 @@ footer {
 
 
 
- /* validacion formulario*/
 
- input:required:valid{
-    background: rgb(224, 241, 224);
-    border: 2px solid rgb(144, 223, 144);
-
- }
-
- input:required:invalid:not(:placeholder-shown){
-    background: rgb(233, 191, 191);
-    border: 2px solid red;
- }
-
- textarea:required:valid{
-    background: rgb(224, 241, 224);
-    border: 2px solid rgb(144, 223, 144);
- }
-
-textarea:required:invalid:not(:placeholder-shown){
-    background: rgb(233, 191, 191);
-    border: 2px solid red;
- }
-
-/* select:required:valid{
-    background: rgb(224, 241, 224);
-    border: 2px solid rgb(144, 223, 144);
- }
-
-select:required:invalid:not(:placeholder-shown){
-    background: rgb(233, 191, 191);
-    border: 2px solid red;
-} */
-
-/* select:required{
-    background: white;
-    border: 2px solid rgb(144, 223, 144);
- }
-
-select.error{
-    background: rgb(233, 191, 191);
-    border: 2px solid red;
-}
-select:required:valid{
-    background: rgb(224, 241, 224);
-    border: 2px solid rgb(144, 223, 144);
- } */
-
-.input-checkbox:required:valid{
-    background: rgb(224, 241, 224);
-    border: 2px solid rgb(144, 223, 144);
- }
- .input-checkbox:required:invalid:not(:placeholder-shown){
-    background: rgb(233, 191, 191);
-    border: 2px solid red;
- }
-
- input:focus{
-    outline: none;
-    border: 2px solid #113155;
-    box-shadow: 0 0 5px rgba(17, 49, 85, 0.5);
- }
  /* Estilos seccion avance */
 
  .section-container-avance {
