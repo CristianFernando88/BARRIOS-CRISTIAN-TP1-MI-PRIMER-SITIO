@@ -30,12 +30,13 @@ html{
     /* background color */
     --bg-color-primary:#e6ecf1;
     --bg-color-terciary:#28394D;
-    --bg-color-secondary:#6488B0;
+    --bg-color-secondary:#6488B0; 
     /* font-size */
     --font-xs: 0.75rem;
     --font-sm: 0.875rem;
     --font-md: 1rem;
-    --font-lg: 1.5rem;   
+    --font-lg: 1.5rem;
+    --font-lg-m:1.75rem; 
     --font-xl: 2rem;   
     --font-xxl: 2.5rem;
     /* colors accent */
@@ -91,38 +92,69 @@ body {
     font-family: var(--font-family-title);
 }
 
-header {
-    background-image: url(./img/pexels-coding-1841550_1920.jpg);
-    background-repeat: no-repeat;
-    color: var(--color-text-white);
-    padding: 20px 0;
-    text-align: center;
-    height: 30%;
+.flex-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-nav {
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(135deg,var(--color-acent1),var(--color-acent2));
+    color: var(--color-text-white);
+    padding: 5px 10px;
+}
+
+header div h1{
+    font-family: var(--font-family-title);
+    font-size: var(--font-lg);
+    font-weight: bold;
+    text-align: center;
+    margin-left: 10px;
+}
+
+/* nav {
     background-color: var(--bg-color-secondary);
     height: 30px;
-}
+} */
+
+/* nav{
+    width: 50%;
+} */
 
 nav ul {
     list-style: none;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    gap:20px;
 }
+.logo{
+    width: 50px;
+    height: 50px;
+    border-radius: var(--radius-circle);
+}
+
 nav ul li {
-    margin: 0 15px;
     padding: 0 15px;
+    transition: all 0.3s ease;
 }
 
 nav ul li:hover {
     /* background-color: var(--color-acent3); */
-    border-bottom: 5px solid var(--color-acent3);
+    background-color: var(--color-secondary);
+    border-radius: var(--radius-sm);
+    /* border-bottom: 5px solid var(--color-acent3); */
+    /* transform: scale(5px); */
+    transform: translateY(-6px);
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
-    font-size: var(--font-lg);
+    font-size: var(--font-lg-m);
 }
 
 main {
@@ -130,6 +162,7 @@ main {
     flex-direction: column;
     align-items: center;
 }
+
 section {
     margin-bottom: 20px;
 }
