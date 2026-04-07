@@ -5,63 +5,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>tp1-mi-sitio</title>
     <link rel="stylesheet" href="style.css">
+    <!-- link para fuentes de Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
     <!-- Enlaza Font Awesome en tu index.html -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 </head>
 <body>
-    <header>
-        <div class="flex-container">
-            <picture>
-                <img class="logo" src="./img/logo-personal.png" alt="logo">
-            </picture>
-            <h1>Barrios Cristian Fernando</h1>
-        </div>
-        <nav class="flex-container">
-            <ul>
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./sobre_mi.html">Sobre mí</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-                <li><a href="./proyectos.html">Proyectos</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="inicio" class="hero">
-            <div>
+    <div class="layout">
+        <header>
+            <div class="flex-container">
                 <picture>
-                    <img src="./img/innovalabs-software-developer-6521720_1280.jpg" alt="Imagen de portada">
+                    <img class="logo" src="./img/logo-personal.png" alt="logo-personal">
                 </picture>
+                <h1>Barrios Cristian Fernando</h1>
             </div>
-            <div>
-                <h1 class="title">"Desarrollador Web Junior"</h1>
-                <h2 class="subtitle">Bienvenido a mi sitio web.</h2>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore minima perspiciatis facilis nihil laborum temporibus consequuntur provident asperiores eos autem nemo, inventore hic itaque. Beatae id labore itaque quae nulla?
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore minima perspiciatis facilis nihil laborum temporibus consequuntur provident asperiores eos autem nemo, inventore hic itaque. Beatae id labore itaque quae nulla?
-                </p>
-                <button class="boton-hero">ver más</button>
+            <nav class="flex-container">
+                <ul>
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="./sobre_mi.html">Sobre mí</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                    <li><a href="./proyectos.html">Proyectos</a></li>
+                </ul>
+            </nav>
+        </header>
+        <aside>
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="./sobre_mi.html">Sobre mí</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                    <li><a href="./proyectos.html">Proyectos</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main>
+            <section id="inicio" class="hero">
+                <div>
+                    <picture>
+                        <img src="./img/innovalabs-software-developer-6521720_1280.jpg" alt="Imagen de portada">
+                    </picture>
+                </div>
+                <div>
+                    <h1 class="title">"Desarrollador Web Junior"</h1>
+                    <h2 class="subtitle">Bienvenido a mi sitio web.</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore minima perspiciatis facilis nihil laborum temporibus consequuntur provident asperiores eos autem nemo, inventore hic itaque. Beatae id labore itaque quae nulla?
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore minima perspiciatis facilis nihil laborum temporibus consequuntur provident asperiores eos autem nemo, inventore hic itaque. Beatae id labore itaque quae nulla?
+                    </p>
+                    <button class="boton-hero">ver más</button>
+                </div>
+                
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2026 Cristian Barrios. Todos los derechos reservados.</p>
+            <div class="social-icons">
+                <a href="https://facebook.com/tuusuario" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://twitter.com/tuusuario" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://instagram.com/tuusuario" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://linkedin.com/in/tuusuario" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
             </div>
-            
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2026 Cristian Barrios. Todos los derechos reservados.</p>
-        <div class="social-icons">
-            <a href="https://facebook.com/tuusuario" target="_blank" rel="noopener noreferrer">
-            <i class="fab fa-facebook-f"></i>
-            </a>
-            <a href="https://twitter.com/tuusuario" target="_blank" rel="noopener noreferrer">
-            <i class="fab fa-twitter"></i>
-            </a>
-            <a href="https://instagram.com/tuusuario" target="_blank" rel="noopener noreferrer">
-            <i class="fab fa-instagram"></i>
-            </a>
-            <a href="https://linkedin.com/in/tuusuario" target="_blank" rel="noopener noreferrer">
-            <i class="fab fa-linkedin-in"></i>
-            </a>
-        </div>
-    </footer>
+        </footer>
+    </div>
 </body>
 </html>
