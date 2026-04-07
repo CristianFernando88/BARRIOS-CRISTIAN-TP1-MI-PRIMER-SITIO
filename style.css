@@ -208,7 +208,15 @@ section {
     min-height: 80vh;
     padding: 20px;
     gap: 20px;
-    background: linear-gradient(135deg,var(--color-secondary),var(--color-primary),var(--color-secondary));
+    background: linear-gradient(135deg,var(--color-secondary),var(--color-primary),var(--color-acent1));
+}
+
+.hero div {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 20px;
+    text-align: center;
 }
 
 .hero picture img{
@@ -218,19 +226,45 @@ section {
     border-radius: var(--radius-lg);
     border: 3px solid var(--color-acent1);
 }
-/* section h1 {
-    margin-bottom: 10px;
-    color: #333;
+.boton-hero{
+    background-color: var(--color-acent3);
+    color: var(--color-text-secondary);
+    font-size:var(--font-lg);
+    font-weight: bold;
+    border: none;
+    box-shadow: var(--shadow-sm);
+    margin: 0 auto;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
 }
-section p {
-    margin-bottom: 10px;
-    color: #555;
-} */
+.boton-hero:hover {
+    background-color: var(--color-acent1);
+    color: var(--color-text-white);
+}
+
 footer {
     background-color: var(--bg-color-terciary);
     color: var(--color-text-white);
     text-align: center;
     padding: 10px 0;
+}
+
+footer .social-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.social-icons a {
+    color: var(--color-text-white);
+    font-size: var(--font-lg);
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: var(--color-acent2);
 }
 
 .section-container {
