@@ -509,53 +509,113 @@ textarea:required:invalid:not(:placeholder-shown){
     margin-bottom: 10px;
 }
 
+/* PARA LAS HABILIDADES */
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.25rem;
+}
 
-
-
- /* Estilos seccion avance */
-
- .section-container-avance {
-    width: 80%;
-    height: auto;
-    justify-content: center;
+.skills-container .card {
     background-color: var(--color-white);
-    box-shadow: var(--shadow-lg);
-    margin-top: 20px;
-    padding: 20px;
+    border: 2px solid var(--color-info-light);
     border-radius: var(--radius-md);
-    /* border-radius: 50px;
-    padding: 20px; */
-    gap: 20px;
+    box-shadow: var(--shadow-lg);
+    transition: all 0.3s ease;
+    padding: 20px;
+    text-align: center;
 }
 
-.carrera-container{
+.skill-card {
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: var(--radius-lg);
+}
+
+.skill-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-lg);
+}
+
+.card-header {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+    background: linear-gradient(135deg, var(--color-acent1), var(--color-acent2));
+    position: relative;
 }
 
-.carrera-container table{
-    border-collapse: collapse;
-    border: 1px solid var(--color-acent1);
+.skill-icon {
+    font-size: 2.5rem;
+    color: var(--color-text-white);
+}
+
+.skill-title h3 {
+    color: var(--color-text-white);
+    margin: 0;
+    padding: 0;
+}
+
+/* Badges de estado */
+.skill-status {
+    margin-left: auto;
+}
+
+.status {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 12px;
     border-radius: 20px;
-}
-
-th{
-    background-color: var(--color-acent2);
-    color: #f4f4f4;
+    font-size: 0.8rem;
     font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
 }
 
-th,td{
-    border: 1px solid var(--color-acent1);
-    padding: 0 20px;
+.status i {
+    font-size: 0.9rem;
 }
 
-tr:nth-child(even){
-    background-color: var(--color-info-light);
+/* Estados específicos */
+.status-acquired .status {
+    background-color: var(--color-success);
+    color: white;
 }
 
+.status-progress .status {
+    background-color: var(--color-info);
+    color: white;
+}
 
+.status-upcoming .status {
+    background-color: var(--color-warning);
+    color: var(--color-text-primary);
+}
+
+/* Barra de progreso para habilidades "En curso" (opcional) */
+/* .progress-bar {
+    margin-top: 15px;
+    background-color: var(--color-grey);
+    border-radius: 10px;
+    overflow: hidden;
+    height: 8px;
+}
+
+.progress-fill {
+    background: linear-gradient(90deg, var(--color-info), var(--color-acent2));
+    width: 65%; 
+    height: 100%;
+    border-radius: 10px;
+    transition: width 0.3s ease;
+} */
+
+/* Ejemplo de uso con barra de progreso */
+.skill-card-progress .card-body {
+    padding-bottom: 20px;
+}
 /* PANTALLA MAS CHICAS */
  @media screen and (max-width: 768px) {
     /* .layout {
