@@ -1,20 +1,41 @@
-# TP1 - Mi Sitio Web
+# TP1 - Mi Sitio Web | Barrios Cristian Fernando
 
 ## Datos Personales
 - **Nombre completo:** Cristian Fernando Barrios  
 - **Número de TP:** TP1  
 - **Fecha:** 16/03/2026  
 
-## Descripción
-Este sitio web es una práctica inicial de desarrollo frontend. Contiene una estructura básica con encabezado, navegación, secciones de contenido y un pie de página. Incluye una seccion de inicio, una sección de presentación personal y un área de contacto.
+## Descripción del Proyecto
+Este sitio web es un portfolio personal desarrollado como práctica inicial de frontend. Contiene una estructura completa con encabezado, navegación, sidebar, secciones de contenido (inicio, sobre mí, habilidades, proyectos, contacto) y un pie de página. El diseño es totalmente responsive y se adapta a dispositivos móviles, tablets y desktop.
 
-## Tecnologías usadas
-- HTML5  
-- CSS3  
+## Link al sitio en vivo
+<!-- Si lo subiste a GitHub Pages o Netlify, poné el link acá -->
+<!-- Ejemplo: https://cristianbarrios.github.io/tp1-mi-sitio/ -->
+<!-- Si no lo subiste, escribí: "Pendiente de publicación" -->
+Pendiente de publicación
 
-## Reflexión
-Aprender a usar la terminal es fundamental aunque exista la interfaz gráfica. La terminal permite trabajar de manera más rápida y precisa, y acceder a funciones avanzadas que muchas veces no están disponibles en la interfaz visual. Además, brinda mayor control sobre el sistema Dominar la terminal es un paso clave para convertirse en un desarrollador más eficiente y profesional.
+## Tecnologías utilizadas
+- **HTML5** - Estructura semántica del sitio
+- **CSS3** - Estilos y diseño visual
+- **Flexbox** - Para la barra de navegación y layout del hero
+- **CSS Grid** - Para el layout principal (header, sidebar, main, footer)
+- **Grid Auto-Fit + Minmax** - Para la galería de habilidades (responsive sin media queries)
+- **Media Queries (Mobile-First)** - 3 breakpoints para adaptación a diferentes dispositivos
+- **Google Fonts** - Fuentes tipográficas profesionales (Inter + Merriweather)
+- **Font Awesome** - Iconografía para redes sociales y habilidades
 
-## Ruta de instalación de Git
-La ruta donde se instaló Git en mi sistema es: /mingw64/bin/git
- 
+## Capturas de pantalla
+
+### Mobile (393px - iPhone)
+
+![Mobile](screenshots/Iphone%20Se.jpg)
+
+### Tablet (820px - iPad)
+
+![Tablet](screenshots/tablet.jpg)
+
+### Desktop (1024px - Laptop)
+
+![Desktop](screenshots/Laptop.jpg)
+
+## Estructura del proyecto
