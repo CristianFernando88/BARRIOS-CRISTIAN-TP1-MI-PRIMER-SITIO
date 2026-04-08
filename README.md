@@ -9,6 +9,7 @@
 Este sitio web es un portfolio personal desarrollado como práctica inicial de frontend. Contiene una estructura completa con encabezado, navegación, sidebar, secciones de contenido (inicio, sobre mí, habilidades, proyectos, contacto) y un pie de página. El diseño es totalmente responsive y se adapta a dispositivos móviles, tablets y desktop.
 
 ## Link al sitio en vivo
+Link: https://cristianfernando88.github.io/BARRIOS-CRISTIAN-TP1-MI-PRIMER-SITIO/index.html
 <!-- Si lo subiste a GitHub Pages o Netlify, poné el link acá -->
 <!-- Ejemplo: https://cristianbarrios.github.io/tp1-mi-sitio/ -->
 <!-- Si no lo subiste, escribí: "Pendiente de publicación" -->
@@ -34,8 +35,11 @@ Pendiente de publicación
 
 ![Tablet](screenshots/tablet.jpg)
 
-### Desktop (1024px - Laptop)
+### Laptop (1024px - Laptop)
 
-![Desktop](screenshots/Laptop.jpg)
+![Laptop](screenshots/Laptop.jpg)
 
-## Estructura del proyecto
+### Laptop (1024px - Laptop)
+
+![Desktop](screenshots/escritorio.jpg)
+
